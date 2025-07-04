@@ -1,8 +1,8 @@
 backend/.env
-backend\__pycache__
+backend/__pycache__/
 
 # dependencies
-/node_modules
+chatbot-ui-lite/node_modules
 /.pnp
 .pnp.js
 
@@ -10,7 +10,7 @@ backend\__pycache__
 /coverage
 
 # next.js
-/.next/
+chatbot-ui-lite/.next/
 /out/
 
 # production
