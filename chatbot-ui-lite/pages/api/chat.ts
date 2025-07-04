@@ -1,5 +1,5 @@
 import { Message } from "@/types";
-import { OpenAIStream } from "@/utils";
+
 
 export const config = {
   runtime: "edge"
@@ -24,9 +24,9 @@ const handler = async (req: Request): Promise<Response> => {
       messagesToSend.push(message);
     }
 
-    const stream = await OpenAIStream(messagesToSend);
+    
 
-    return new Response(stream);
+    return new Response(null);
   } catch (error) {
     console.error(error);
     return new Response("Error", { status: 500 });
